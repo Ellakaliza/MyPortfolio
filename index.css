@@ -1,5 +1,5 @@
 Body{
-    background-image: linear-gradient(rgb(176, 91, 176),Pink);
+    background-image: linear-gradient(rgb(243, 140, 157),Pink);
     color: white;
 }
 a{
@@ -10,22 +10,36 @@ ul{
     list-style-type: none;
 }
 header{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(243, 140, 157) 50%,Pink);
+    position: sticky;
+    top: 0px;
 }
 #navbar{
     display: flex;
-    align-content: space-around;
     justify-content: space-around;
 }
-footer{
-    background-attachment: fixed;
-    background-color: rgb(176, 91, 176);
-}
 #about{
+     & ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    & h2{
+        text-align: center;
+    }
+    padding: 50px;
     height: 500px;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+#projects{
+    height: 500px;
+}
+header h1{
+    text-align: center;
+}
+
+h1, h2, h4 {
+    font-family:"Matemasie", sans-serif ;
 }
