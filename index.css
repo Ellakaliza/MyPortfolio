@@ -1,45 +1,116 @@
-Body{
-    background-image: linear-gradient(rgb(243, 140, 157),Pink);
-    color: white;
+*{
+    margin: 0;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-ul{
-    list-style-type: none;
-}
-header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgb(243, 140, 157) 50%,Pink);
-    position: sticky;
-    top: 0px;
-}
-#navbar{
-    display: flex;
-    justify-content: space-around;
-}
-#about{
-     & ul{
+.header{
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(rgb(248, 248, 38), white) ;
+    color:rgb(15,235,209);
+    & h1{
+        padding-left: 5%;
+        font-size: 1.5cm;
+    }
+    & p{
+        padding-left: 7cm;
+        color:rgb(15, 235, 209) ;
+        font-size:1.5em;
+        font-family: "New Amsterdam", sans-serif;
+    }
+    & ul{
+        padding-top: 10%;
+        list-style-type: none;
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
+        & li{
+            border: 1px solid rgb(15, 235, 209);
+            padding: 1%;
+        }
     }
+    & ul#second{
+        padding-top: 1%;
+    }
+}
+.projects{
+    height: 100vh;
     & h2{
-        text-align: center;
+       padding: 5%;
+       text-align: right;
+       color: rgb(15, 235, 209);
     }
-    padding: 50px;
-    height: 500px;
-}
-#projects{
-    height: 500px;
-}
-header h1{
-    text-align: center;
-}
+    & div.pbox{
+        padding:5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
+            
+        & a{
+            text-decoration: none;
+            margin: 1%;
+            padding: 2%;
+            width: 15vw;
+            height: 10vh;
+            border: 2px solid rgb(248, 248, 38);
+            color: rgb(15, 235, 209);
+                text-align: center;
+            &:hover {
+                background-color: rgb(15, 235, 209);
+                color: white;
+                border: none;
+                }
+            &:active {
+                background-color: rgb(15, 235, 209);
+                box-shadow: 0 5px aqua;
+                transform: translateY(4px); 
+                }
+            }
+    }
+
+}
+.contact{
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(white, rgb(15,235,209));
+    & h1{
+        margin-left:50%;
+        margin-right: 50%;
+        margin-top: 5%;
+        color: aqua;
+    }
+    & form{
+        margin-left: 50%;
+        & textarea{
+            width: 250px;
+            height: 250px;
+            background-color: transparent;
+            border:aqua 2px solid;
+        }
+        & input {
+            background-color: transparent;
+            width: 250px;
+            height: 25px;
+            border:aqua 2px solid;
+        }
+        & button{
+            width: 250px;
+            height:50px;
+            background-color: transparent;
+            border:aqua 2px solid;
+            color:white;
+            font-family: "Anton", sans-serif;
+            &:hover {
+                background-color: white;
+                color: rgb(15, 235, 209);
+                border: none;
+            }
+            &:active {
+                background-color: aqua;
+                box-shadow: 0 5px aquamarine;
+                transform: translateY(4px);
+              }
+        }
+    }
+}
 h1, h2, h4 {
-    font-family:"Matemasie", sans-serif ;
+    font-family:"Anton", sans-serif ;
 }

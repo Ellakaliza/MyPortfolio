@@ -5,68 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella's Website</title>
     <link rel="stylesheet" href="index.css">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=New+Amsterdam&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-       <h1>Ella's Portfolio</h1>
-       <nav>
-            <div>
-                <ul id="navbar">
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#projects">Projects I've worked on</a></li>
-                    <li><a target="_blank" href="contactMe.html">Contact me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div id="about">
-            <h2>About me</h2>
-            <ul>
-                <li>I am a <span>first</span> year software engineering student</li>
-                <li>I have extensive knowledge in Java</li>
-                <li>Other languages that I have used before are python, C, C#, Clojure, HTML, CSS, JavaScript</li>
-                <li>I also know Node.js</li>
-                <li>I also know SQL</li>
-            </ul>
-        </div>
-        <div id="projects">
-            <h2>Projects I have worked on</h2>
-            <table>
-                <tr>
-                    <th><a target="_blank" href="https://github.com/Ellakaliza/JavaProject1">FunReadings</a></th>
-                    <td>Java</td>
-                </tr>
-                <tr>
-                    <th><a target="_blank" href="https://github.com/Ellakaliza/JavaProject2">Mr. Filmbuff's Movie Sorter</a>
-                   </th> 
-                   <td>Java</td>
-                </tr>
-                <tr>
-                    <th><a target="_blank" href="https://github.com/Ellakaliza/JavaProject3">Ms. Jones' Vocabulary Sorter</a>
-                    </th>
-                    <td>Java</td>
-                </tr>
-                <tr>
-                    <th><a href="https://github.com/Ellakaliza/C_Projects"> C Project</a></th>
-                    <td>C</td>
-                </tr>
-                <tr>
-                    <th><a href="https://github.com/Ellakaliza/PythonProjects">Python project</a></th>
-                    <td>Python</td>
-                </tr>
-                <tr>
-                    <th><a href="https://github.com/Ellakaliza/Clojure">Clojure proj</a></th>
-                    <td>Clojure</td>
-                </tr>
-                <tr>
-                    <th><a href="https://github.com/Ellakaliza/C_Sharp_Projects">C# proj</a></th>
-                    <td>C#</td>
-                </tr>
-            </table>
-        </div>
-    </main>
+    <section class="header">
+        <ul id="first">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>JS</li>
+            <li>Clojure</li>
+        </ul>
+        <h1>Ange Marie Ella Akaliza</h1>
+        <p id="p1"><span>Second</span> year software engineering student</p>
+        <ul id="second">
+           <li>HTML</li>
+            <li>CSS</li>
+            <li>NodeJs</li>
+            <li>SQL</li> 
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projects I have worked on</h2>
+        <div class="pbox">
+            <a target="_blank" href="https://github.com/Ellakaliza/JavaProject1"><div id="p1">
+                <p>FunReadings</p>
+                <p>Java</p>
+            </div></a>
+
+            <a target="_blank" href="https://github.com/Ellakaliza/JavaProject2"><div id="p2">
+                <p>Mr. Filmbuff's Movie Sorter</p>
+                <p>Java</p>
+            </div></a>
+
+            <a target="_blank" href="https://github.com/Ellakaliza/JavaProject3"><div id="p3">
+                <p>Ms. Jones' Vocabulary Sorter</p>
+                <p>Java</p>
+            </div></a>
+            
+            <a target="_blank" href="https://github.com/Ellakaliza/C_Projects"><div id="p4"><p>C Project</p>
+                <p>C</p>
+            </div></a>
+                
+            
+            <a target="_blank" href="https://github.com/Ellakaliza/PythonProjects"><div id="p5">
+                <p>Python project</p>
+                <p>Python</p>
+            </div></a>
+            
+            <a target="_blank" href="https://github.com/Ellakaliza/Clojure"><div id="p6">
+                <p>Clojure proj</p>
+                <p>Clojure</p>
+            </div></a>
+                
+            <a target="_blank" href="https://github.com/Ellakaliza/C_Sharp_Projects"><div id="p7">
+                <p>C# proj</p>
+                <p>C#</p>
+            </div></a>
+        </div>    
+    </section>
+
+    <section class="contact">
+        <h1>Contact Form</h1>
+        <form action="/">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <br>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <br>
+            
+            <br>
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+            <br>
+            <button type="submit">Send Me a Message</button>
+        </form>
+    </section>
 </body>
 </html>
